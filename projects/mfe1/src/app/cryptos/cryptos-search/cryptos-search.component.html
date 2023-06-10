@@ -1,0 +1,41 @@
+<style>
+  .example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+}
+</style>
+
+<p>
+  <mat-form-field appearance="outline">
+    <mat-label>Search For Coins</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>You'll probably lose money</mat-hint>
+  </mat-form-field>
+</p>
+<p>
+  <button (click)="search()" mat-button>Search</button>
+</p>
+
+<mat-card *ngIf="active" class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>ng-dogecoin</mat-card-title>
+    <mat-card-subtitle>Meme Coin</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <p>
+      Ready to take your investments <em>to the moon?</em> Look no further than this coin guaranteed to increase in value by 10,000% by the end of the week.
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button (click)="purchase()" mat-button>Purchase</button>
+    <button (click)="reset()" mat-button>Watch</button>
+  </mat-card-actions>
+</mat-card>
+
