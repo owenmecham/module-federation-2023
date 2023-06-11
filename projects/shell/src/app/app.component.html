@@ -14,7 +14,11 @@
 
     <mat-nav-list>
       <a mat-list-item (click)="sidenav.toggle()" [routerLink]="'/'"> Home </a>
-      <a mat-list-item (click)="sidenav.toggle()" [routerLink]="'/cryptos/cryptos-search'"> Cryptos </a>
+      <ng-container *ngFor="let remote of remotes">
+        <a mat-list-item (click)="sidenav.toggle()" [routerLink]="remote.routePath">{{
+          remote.displayName
+        }}</a>
+      </ng-container>
       <a mat-list-item (click)="sidenav.toggle()" mat-list-item>Close </a>
 
     </mat-nav-list>
