@@ -15,6 +15,11 @@
       "es2018",
       "dom"
     ],
-    "useDefineForClassFields": false
+    "useDefineForClassFields": false,
+    "paths": {
+      "wallet-lib": [
+        "projects/wallet-lib/src/public-api"
+       ]
+    }
   }
 }
