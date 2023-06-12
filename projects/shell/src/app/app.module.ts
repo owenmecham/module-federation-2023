@@ -11,19 +11,19 @@ import { AppComponent } from './app.component';
 import { APP_ROUTES } from './app.routes';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
-
+import { PluginProxyComponent } from './plugins/plugin-proxy.component';
 @NgModule({
   imports: [
-    BrowserModule,
-    RouterModule.forRoot(APP_ROUTES),
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatIconModule,
+	BrowserModule,
+	RouterModule.forRoot(APP_ROUTES),
+	BrowserAnimationsModule,
+	MatToolbarModule,
+	MatSidenavModule,
+	MatListModule,
+	MatButtonModule,
+	MatIconModule,
   ],
-  declarations: [AppComponent, HomeComponent, NotFoundComponent],
+  declarations: [AppComponent, HomeComponent, NotFoundComponent, PluginProxyComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
