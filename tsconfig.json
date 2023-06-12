@@ -19,7 +19,7 @@
     "paths": {
       "wallet-lib": [
         "projects/wallet-lib/src/public-api"
-       ]
+      ]
     }
   }
 }
